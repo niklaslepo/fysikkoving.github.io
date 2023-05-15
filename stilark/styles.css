@@ -1,0 +1,202 @@
+/* generelle bestemmelser for alle elementer */
+* {
+    font-family: 'montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* skriftstørrelse 100% på html */
+html {
+    font-size: 100%;
+}
+
+/* Fjerner standard dekorasjon fra linker */
+a {
+    text-decoration: none;
+}
+
+/* Plasserer overskriftsområdet (øverst og sticky) */
+.header{
+    border-bottom: solid 2px #000000;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+/*Bestemmer organisasjon av navbar elementene */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1 rem;
+
+}
+
+/* Skjuler hamburgermenyen som standard */
+.hamburger {
+    display: none;
+    margin-right: 1rem;
+}
+
+/* Styler barene på hamburgermenyen*/
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+/* Bestemmer plasseringer i navigasjonsmenyen*/
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Plasserer de individuelle navigasjonselementene*/
+.nav-item {
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+/* Styler navigasjonslinkene */
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000000;
+
+}
+/* Hover effekt */
+.nav-link:hover{
+    color: #6d574a;
+}
+/* Styler overskriften */
+.nav-title {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #000000;
+}
+/* Bruker responsive stiler for skjermer med bredde under 900 px */
+@media only screen and (max-width: 900px) {
+
+    /* Stil navigasjonsmenyen for mindre skjermer */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 3rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    /* Justerer margen*/
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    /* Viser hamburgermenyen og velger pointer */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Animasjoner når den trykkes */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Lafer rader med flex */
+.row {
+    display: flex;
+}
+  
+/* Lager padding til alle kolonner */
+.column {
+    padding: 10px;
+}
+  
+  /* Gjør enkelt å endre venstre kolonne om ønskelig */
+.column.left {
+    flex: 3;
+    text-align: center;
+    height: auto;
+}
+  
+/* Gjør enkelt å endre midtre kolonne om ønskelig */
+.column.middle {
+    flex: 3;
+    text-align: center;
+    height: auto;
+}
+
+/* Gjør enkelt å endre høyre kolonne om ønskelig */
+.column.right {
+    flex: 3;
+    text-align: center;
+    height: auto;
+}
+
+     
+/* Stil logo til venstre */
+.logo{   
+    width: 50px;
+    margin-left: .3rem;
+}
+
+/* Styler bunnlinjen */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+  
+/* Bruker responsive stiler for skjermer med bredde under 600 px */
+@media (max-width: 600px) {
+
+    /* Stavler kolonner oppå hverandre */
+    .row {
+      flex-direction: column;
+    }
+}
+
+/* Stil for h2-elementene */
+h2{
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+/* Fjerner standard listestil for uordnede lister */
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Gir stil til listeelementene */
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+/* Endrer musen når den er på en link */
+ul li label{
+    cursor: pointer;
+}

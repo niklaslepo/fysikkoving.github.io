@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <!-- Angir tittelen på siden -->
+        <title>Rettlinjet bevegelse</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stilark/styles.css"> <!-- Link til en ekstern CSS-fil -->
+        <script src="js/hamburger.js" defer></script> <!-- Link til en ekstern JavaScript-fil og ber htmlen laste fort -->
+    </head>
+
+    <body> 
+      <header class="header"> <!-- Lag et overskriftselement med en navigasjonslinje -->
+          <nav class="navbar">
+              <!-- Legger til en logo som lenker til hjemnmesiden -->
+              <a href="index.html"> <img alt="home" src="./bilder/home.png" class="logo"> </a>
+              <!-- Legger til en tittel som lenker til hjemmesiden -->
+              <a href="index.html" class="nav-title">Rettlinjet bevegelse</a>
+
+              <!-- Legger til en liste med navigasjonslenker -->
+              <ul class="nav-menu">
+                  <li class="nav-item">
+                      <a href="teori.html" class="nav-link">Teori</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="quiz.html" class="nav-link">Quiz</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="help.html" class="nav-link">Hjelp</a>
+                  </li>
+              </ul>
+
+              <!-- Legger til et hamburgerikon for mobilnavigering -->
+              <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </div>
+          </nav>
+      </header>
+
+      <!-- Lager rad med to tekstbokser, linken åpner mailappen på enheten -->
+      <div class="row">
+        <div class="column left" style="background-color:#5b8584; font-size: 150%;"> Jeg er gjerne behjelpelig med spørsmål og feil!</div>
+        <div class="column right" style="background-color: #73a9a8 ; font-size: 150%;"> <b> Mail:</b> <a href="mailto:nilea002@osloskolen.no">  nilea002@osloskolen.no </a> <br> <b> Telefon:</b> 46 299 632 </div>
+      </div>
+
+      <!-- Lager en rad med bilde -->
+      <div class="row">
+        <div class="column middle" >
+          <img alt="Support" src="./bilder/help.jpg.webp" style="width:100%;">  
+        </div>
+      </div>    
+
+    
+      <!-- Lager en bunntekst -->
+      <div class="footer">
+        <p>© 2023, fysikkøving.no Drevet av Niklas Leporanta</p>
+      </div>
+
+
+    </body>
+</html>

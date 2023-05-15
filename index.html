@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <!-- Angir tittelen på siden -->
+        <title>Rettlinjet bevegelse</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stilark/styles.css"> <!-- Link til en ekstern CSS-fil -->
+        <script src="js/hamburger.js" defer></script> <!-- Link til en ekstern JavaScript-fil og ber htmlen laste fort -->
+    </head>
+
+
+    <body> 
+        <header class="header"> <!-- Lag et overskriftselement med en navigasjonslinje -->
+            <nav class="navbar">
+                <!-- Legger til en logo som lenker til et nettsted -->
+                <a href="https://aunivers.no" target="_blank"> <img alt="aunivers link" src="./bilder/alogo.jpg" class="logo"> </a> 
+                <!-- Legger til en tittel som lenker til hjemmesiden -->
+                <a href="index.html" class="nav-title">Rettlinjet bevegelse</a>
+
+                <!-- Legger til en liste med navigasjonslenker -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="teori.html" class="nav-link">Teori</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="quiz.html" class="nav-link">Quiz</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="help.html" class="nav-link">Hjelp</a>
+                    </li>
+                </ul>
+
+                <!-- Legger til et hamburgerikon for mobilnavigering -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Lager en rad med to bilder -->
+        <div class="row">
+            <div class="column left" >
+                <img alt="Fartslikningen" src="./bilder/train.jpg" style="width:100%;" class="1">
+            </div>
+
+            <div class="column right" >
+                <img alt="Fartslikningen" src="./bilder/swim.jpg" style="width:100%;" class="1">
+            </div>
+        </div>
+
+
+        <!-- Lager en rad med tekst -->
+        <div class="row">
+            <h2 class="column middle"> En rask gjennomgang i alt du trenger å kunne om dette kapitlet! <br> <br></h2>
+        </div>
+
+        <!-- Lager en rad med et bilde -->
+        <div class="row">
+            <div class="column middle"> <img alt="bevegelse" src="./bilder/bevegelse.png" style="width:100%;"> </div>
+            
+        </div>    
+
+        <!-- Lager en bunntekst -->
+        <div class="footer">
+            <p>© 2023, fysikkøving.no Drevet av Niklas Leporanta</p>
+        </div>
+
+
+    </body>
+</html>
+

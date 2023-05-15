@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <!-- Angir tittelen på siden -->
+        <title>Rettlinjet bevegelse</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stilark/styles.css"> <!-- Link til en ekstern CSS-fil -->
+        <script src="js/hamburger.js" defer></script> <!-- Link til en ekstern JavaScript-fil og ber htmlen laste fort -->
+    </head>
+
+    <body> 
+      <header class="header"> <!-- Lag et overskriftselement med en navigasjonslinje -->
+          <nav class="navbar">
+              <!-- Legger til en logo som lenker til hjemnmesiden -->
+              <a href="index.html"> <img alt="home" src="./bilder/home.png" class="logo"> </a>
+              <!-- Legger til en tittel som lenker til hjemmesiden -->
+              <a href="index.html" class="nav-title">Rettlinjet bevegelse</a>
+
+              <!-- Legger til en liste med navigasjonslenker -->
+              <ul class="nav-menu">
+                  <li class="nav-item">
+                      <a href="teori.html" class="nav-link">Teori</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="quiz.html" class="nav-link">Quiz</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="help.html" class="nav-link">Hjelp</a>
+                  </li>
+              </ul>
+
+              <!-- Legger til et hamburgerikon for mobilnavigering -->
+              <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </div>
+          </nav>
+      </header>
+
+      <!-- første avsnitt -->
+      <div class="row">
+        <h3 class="column middle" style="background-color:#57627e;">Graf, formel og tekst</h3>
+      </div>
+
+      <div class="row">
+        <div class="column left">
+          Matematiske uttrykk er ofte mer presise og effektive enn ord når vi arbeider med fysikk. Derfor er matematikk blitt fysikkens «språk».
+          Nøyaktigheten av en måling eller verdi bestemmer hvor mange gjeldende sifre vi oppgir verdien med. 
+          Det skal være like mange gjeldende sifre i svaret på en oppgave som den minst nøyaktige verdien som er brukt i utregningene.
+        </div>
+        <div class="column right">
+          En størrelse har både måltall og enhet.
+          Stigningstallet til tangenten i en posisjonsgraf gir oss momentanfarten.
+          Stigningstallet til tangenten i en fartsgraf gir oss momentanakselerasjonen. 
+          Arealet under en fartsgraf gir oss endringen i posisjon.
+          Arealet under en akselerasjonsgraf gir oss endringen i fart.
+        </div>
+      </div>
+
+      <!-- andre avsnitt -->
+      <div class="row">
+        <h3 class="column middle" style="background-color:#57627e;"> Posisjon, fart og akselerasjon</h3>
+      </div>
+
+      <div class="row">
+        <div class="column middle" style="background-color:#d8d8d8;">
+          Posisjon, fart og akselerasjon kan være både positive og negative. Du må selv velge hvilken retning som er positiv.
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column left"> 
+          Gjennomsnittsfart er posisjonsendring delt på tid: 
+        </div>
+        <div class="column right" >
+          <img alt="Fartslikningen" src="./bilder/5.png" style="width:100%;">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column left"> 
+          Momentanfart er den deriverte av posisjonen: 
+        </div>
+        <div class="column right" >
+          <img alt="Fartslikningen" src="./bilder/6.png" style="width:100%;">
+        </div>
+      </div>    
+    
+      <div class="row">
+        <div class="column left"> 
+          Gjennomsnittsakselerasjon er fartsendring delt på tid: 
+        </div>
+        <div class="column right" >
+          <img alt="Fartslikningen" src="./bilder/7.png" style="width:100%;">
+        </div>
+      </div>    
+    
+      <div class="row">
+        <div class="column left"> 
+          Momentanakselerasjon er den deriverte av farten: 
+        </div>
+        <div class="column right" >
+          <img alt="Fartslikningen" src="./bilder/8.png" style="width:100%;">
+        </div>
+      </div>
+
+      <!-- tredje avsnitt -->
+      <div class="row">
+        <h3 class="column middle" style="background-color:#57627e;">Bevegelseslikningene for konstant akselerasjon</h3>
+      </div>
+   
+
+      <div class="row">
+        <div class="column left" >
+          <img alt="Fartslikningen" src="./bilder/1.jpg" style="width:100%;">
+        </div>
+        <div class="column right" style="background-color:#ccc;">Fartslikningen</div>
+      </div>
+
+      <div class="row">
+        <div class="column left" >
+          <img alt="posisjonslikning 1" src="./bilder/2.jpg" style="width:100%;" >
+        </div>
+        <div class="column right" style="background-color:#ccc;">Posisjonslikning 1</div>
+      </div>
+
+      <div class="row">
+        <div class="column left" >
+          <img alt="posisjonslikning 2" src="./bilder/3.jpg" style="width:100%;">
+        </div>
+        <div class="column right" style="background-color:#ccc;">Posisjonslikning 2</div>
+      </div>
+
+      <div class="row">
+        <div class="column left" >
+          <img alt="tidøls likning" src="./bilder/4.jpg" style="width:100%;">
+        </div>
+        <div class="column right" style="background-color:#ccc;">Tidløs likning</div>
+      </div>
+
+
+      <!-- Lager en bunntekst -->
+      <div class="footer">
+        <p>© 2023, fysikkøving.no Drevet av Niklas Leporanta</p>
+      </div>
+
+    </body>
+</html>

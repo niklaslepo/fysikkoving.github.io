@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <!-- Angir tittelen på siden -->
+        <title>Rettlinjet bevegelse</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stilark/styles.css"> <!-- Link til en ekstern CSS-fil -->
+        <link rel="stylesheet" href="./stilark/quiz.css">
+        <script src="js/hamburger.js" defer></script> <!-- Link til en ekstern JavaScript-fil og ber htmlen laste fort -->
+        <script src="js/quiz.js" defer></script>
+    </head>
+
+    <body> 
+      <header class="header"> <!-- Lag et overskriftselement med en navigasjonslinje -->
+          <nav class="navbar">
+              <!-- Legger til en logo som lenker til hjemnmesiden -->
+              <a href="index.html"> <img alt="home" src="./bilder/home.png" class="logo"> </a>
+              <!-- Legger til en tittel som lenker til hjemmesiden -->
+              <a href="index.html" class="nav-title">Rettlinjet bevegelse</a>
+
+              <!-- Legger til en liste med navigasjonslenker -->
+              <ul class="nav-menu">
+                  <li class="nav-item">
+                      <a href="teori.html" class="nav-link">Teori</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="quiz.html" class="nav-link">Quiz</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="help.html" class="nav-link">Hjelp</a>
+                  </li>
+              </ul>
+
+              <!-- Legger til et hamburgerikon for mobilnavigering -->
+              <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </div>
+          </nav>
+      </header>
+
+
+
+
+      <div class="column middle" style="background-color:#6d574a;">
+        <div class="app">
+          <h1>Quiz om rettlinjet bevegelse</h1>
+          <!-- Knapp som kjører calculate-btn funksjonen i Javascript -->
+          <button class="btn" id="calculate-btn">Kalkulator</button>
+
+          <div class="quiz">
+            <h2 id="question">spørsmål</h2>
+            <h2 id="score-compliment"></h2>
+
+             <!-- Elementer for svarknapper -->
+            <div id="answer-buttons">
+              <button class="btn">Answer 1</button>
+              <button class="btn">Answer 2</button>
+              <button class="btn">Answer 3</button>
+              <button class="btn">Answer 4</button>
+            </div>
+
+             <!-- Neste knapp -->
+            <button id="next-btn"> Next </button> 
+            </div>
+        </div>
+      </div>
+
+      <!-- Lager en rad med bilde av formler -->
+      <div class="row">
+        <div class="column middle" >
+          <img alt="quote" src="./bilder/formler.jpg" style="width:100%;">
+        </div>
+      </div>  
+
+      <!-- Lager en rad med bilde -->
+      <div class="row">
+        <div class="column middle" >
+          <img alt="quote" src="./bilder/quote.jpg" style="width:100%;">  
+        </div>
+      </div>    
+
+      <!-- Lager en bunntekst -->
+      <div class="footer">
+        <p>© 2023, fysikkøving.no Drevet av Niklas Leporanta</p>
+      </div>
+
+
+    </body>
+</html>

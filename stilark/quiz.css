@@ -1,0 +1,83 @@
+
+/* Lager boks for quizen */
+.app{
+    background: #fff;
+    width: 98%;
+    max-width: auto;
+    margin: 10px auto 10px;
+    border-radius: 10px;
+    padding: 30px ;
+}
+
+/* Styling for h1-elementet i appen */
+.app h1{
+    font-size: 25px;
+    color: #6d574a;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+/* Beholder for quizdelen (med spørsmål og svar) */
+.quiz{
+    padding: 20px 0;
+}
+
+/* Styling for overskriften i quizdelen */
+.quiz h2{
+    font-size: 18px;
+    color: #6d574a;
+    font-weight: 600;
+}
+
+
+/* Styling for knappene */
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align:  left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Hover effekt, unntatt deaktiverte knapper */
+.btn:hover:not([disabled]){
+    background: #636363;
+    color: #fff;
+}
+
+/* Gjør det umulig å trykke på deaktiverte knapper */
+.btn:disabled{
+    cursor: no-drop;
+}
+
+/* Styling for "neste" knapp */
+#next-btn{
+    background:#6d574a
+    color #fff;
+    font-weight: 500 ;
+    width: 200px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    
+    }
+
+/* Styling for riktig svar*/
+.correct{
+    background-color: #9aea9abc ;
+}
+
+/* Styling for feil svar*/
+.incorrect{
+    background-color: #ff9393;
+}
